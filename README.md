@@ -19,7 +19,8 @@ To use this script, you will first need a .csv configuration file with each entr
 
 ...where `Hotspot_Address` is the hotspot being paid, `Payment_Address` is the wallet address
 being paid, and `Payment Split` is a 2-decimal float value representing the percentage split (e.g. `0.50` for 50%).
-You can reference `payment_details.csv` for an example template.
+You can reference [payment_details.csv](https://github.com/cvolkernick/HNTpayments/blob/master/payment_details.csv)
+for an example template.
 
 Once you have a properly configured csv file for payment splits, you can simply download `main.py` and 
 [execute the script via command line](https://realpython.com/run-python-scripts/#how-to-run-python-scripts-using-the-command-line).
