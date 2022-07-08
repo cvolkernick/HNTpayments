@@ -25,5 +25,12 @@ Once you have a properly configured csv file for payment splits, you can simply 
 [execute the script via command line](https://realpython.com/run-python-scripts/#how-to-run-python-scripts-using-the-command-line).
 Provide the requested info at runtime, then copy / paste the output CLI multipayment command to issue the payment.
 
-**NOTE**: Be advised that unless you remove the `--commit` from the output payment command, the payment will be issued on the blockchain.
+## Notes
+
+Be advised that unless you remove the `--commit` from the output payment command, the payment will be issued on the blockchain.
 You must remove the `--commit` flag to preview the payment transaction first.
+
+It's also important to note that
+the current maximum number of unique payment addresses for a CLI multipayment is `50`; if your payment splits csv input contains
+more unique payment addresses than this, you may encounter errors trying to issue the payment the payment transaction
+itself. If so, re-try with less per batch by splitting your csv file into multiple files.
